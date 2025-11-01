@@ -9,14 +9,14 @@ public class VRSeat : MonoBehaviour
     public XROrigin xrOrigin;
     public Transform seatAnchor;
     public MovementLocker locker;
-    [Tooltip("Zablokuj ruch i obrót po usadzeniu")]
+    [Tooltip("Zablokuj ruch i obrÃ³t po usadzeniu")]
     public bool lockTurningAndMovement = true;
 
     bool _seated;
     Vector3 _prevPos;
     Quaternion _prevRot;
 
-    // Opcjonalnie: wy³¹cz kolizje/auto-wysokoœæ gdy siedzimy
+    // Opcjonalnie: wyï¿½ï¿½cz kolizje/auto-wysokoï¿½ï¿½ gdy siedzimy
     CharacterController _cc;
     CharacterControllerDriver _ccDriver;
     bool _ccPrevEnabled, _ccDriverPrevEnabled;
@@ -41,11 +41,11 @@ public class VRSeat : MonoBehaviour
 
         if (lockTurningAndMovement) locker?.SetLocked(true);
 
-        // Wyrównaj yaw do anchor.forward i przenieœ kamerê w punkt kotwicy
+        // Wyrï¿½wnaj yaw do anchor.forward i przenieï¿½ kamerï¿½ w punkt kotwicy
         xrOrigin.MatchOriginUpCameraForward(Vector3.up, seatAnchor.forward);
         xrOrigin.MoveCameraToWorldLocation(seatAnchor.position);
 
-        // (opcjonalnie) wy³¹cz CC i auto-height, ¿eby nic nas nie „pcha³o”
+        // (opcjonalnie) wyï¿½ï¿½cz CC i auto-height, ï¿½eby nic nas nie ï¿½pchaï¿½oï¿½
         if (_cc)
         {
             _ccPrevEnabled = _cc.enabled;
@@ -63,7 +63,7 @@ public class VRSeat : MonoBehaviour
     {
         if (!_seated || !xrOrigin) return;
 
-        // Przywróæ poprzedni¹ pozycjê rig-a (albo mo¿esz zostawiæ gracza na krzeœle)
+        // Przywrï¿½ï¿½ poprzedniï¿½ pozycjï¿½ rig-a (albo moï¿½esz zostawiï¿½ gracza na krzeï¿½le)
         xrOrigin.transform.SetPositionAndRotation(_prevPos, _prevRot);
 
         if (lockTurningAndMovement) locker?.SetLocked(false);

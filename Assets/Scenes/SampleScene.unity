@@ -18499,6 +18499,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5963898182175326137, guid: 8c8b4c5a9058c8544ab00ee0e6e5e52d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8533455820126071309}
+    - targetCorrespondingSourceObject: {fileID: 5963898182175326137, guid: 8c8b4c5a9058c8544ab00ee0e6e5e52d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8533455820126071316}
   m_SourcePrefab: {fileID: 100100000, guid: 8c8b4c5a9058c8544ab00ee0e6e5e52d, type: 3}
 --- !u!1 &8533455820126071306 stripped
 GameObject:
@@ -18547,6 +18550,96 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.023795398, y: 0.018721513, z: 0.047065075}
   m_Center: {x: 0.0005316753, y: 0, z: 0.022592822}
+--- !u!64 &8533455820126071311 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 7355782141375902031, guid: 8c8b4c5a9058c8544ab00ee0e6e5e52d, type: 3}
+  m_PrefabInstance: {fileID: 8533455820126071305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8533455820126071316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8533455820126071306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders:
+  - {fileID: 8533455820126071311}
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8533455820126071308}
+        m_TargetAssemblyTypeName: VRSeat, Assembly-CSharp
+        m_MethodName: Sit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
 --- !u!4 &9131688449649986390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2224261485402360553, guid: 29529d949c965f643befe6cfcd1e372c, type: 3}
