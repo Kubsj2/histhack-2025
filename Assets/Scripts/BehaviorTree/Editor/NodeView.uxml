@@ -1,0 +1,25 @@
+<UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/BehaviorTree/Editor/NodeView.uss?fileID=7433441132597879392&amp;guid=5d70b5d0e21800a488054de839f5c38b&amp;type=3#NodeView" />
+    <ui:VisualElement name="node-state" style="flex-grow: 1;" />
+    <ui:VisualElement name="node-border">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="top">
+                <ui:VisualElement name="input" style="height: auto;" />
+                <ui:VisualElement name="divider" class="vertical" />
+                <ui:VisualElement name="title" style="flex-direction: row-reverse; align-items: center; justify-content: space-between;">
+                    <ui:Label name="title-label" text="DebugLogNode" class="unity-text-element unity-label" />
+                    <ui:VisualElement name="title-button-container">
+                        <ui:VisualElement name="collapse-button">
+                            <ui:VisualElement name="icon" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="node-icon" style="flex-grow: 0; position: relative; width: 20px; height: 20px; align-items: center; left: auto; top: auto; right: auto; align-self: center; justify-content: center;" />
+                </ui:VisualElement>
+                <ui:Label text="This is a description" name="description" />
+                <ui:VisualElement name="divider" class="vertical" />
+                <ui:VisualElement name="output" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" enabled="true" picking-mode="Ignore" />
+</UXML>
